@@ -88,6 +88,7 @@ def menu():
     print('3 - Saque')
     print('4 - Saldo')
     print('5 - Sair da conta')
+    print('6 - Finalizar')
     option = int(input('Escolha: '))
     if option >= 1 and option <=6:
       return option
@@ -100,9 +101,9 @@ def menu():
         return False
         break
 
-from IPython.display import clear_output #Limpeza
+import os
 def limpar_tela():
-    clear_output(wait=True)
+  os.system('cls')
 
 #main --------------------------
 vl, user = valid()
